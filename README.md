@@ -1,4 +1,4 @@
-# K8S - Lista de Tarefas
+# K8S - Lista de Tarefas - Projeto em Andamento
 
 ## 1.0 Descrição
 
