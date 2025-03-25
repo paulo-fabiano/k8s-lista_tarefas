@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: pfabianofilho/front-lista-tarefas:v3
+          image: pfabianofilho/front-lista-tarefas:v1
           ports:
             - containerPort: 3000
 ---
