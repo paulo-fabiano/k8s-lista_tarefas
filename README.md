@@ -47,9 +47,13 @@ Você verá uma saída parecida com está:
 
 Com o Cluster criado, apliquei os arquivos **.yaml** para criar os Pods e os services.
 
+- Criando Pods
+  
 ```
 kubectl apply -f deployment.yaml 
 ```
+
+- Criando Services
 
 ```
 kubectl apply -f services.yaml
@@ -57,6 +61,8 @@ kubectl apply -f services.yaml
 
 Podemos ver se os Pods e os Services foram criados:
 
+- Checando Pods
+  
 ```
 kubectl get pods
 ```
@@ -67,6 +73,8 @@ backend-6b849bbd5b-tptxn    1/1     Running   0          84m
 frontend-5fd4c5dbd7-7skq8   1/1     Running   0          84m
 ```
 
+- Checando Services
+  
 ```
 kubectl get services
 ```
