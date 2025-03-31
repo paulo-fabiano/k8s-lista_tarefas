@@ -45,12 +45,38 @@ Você verá uma saída parecida com está:
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ```
 
-Utilizei para criar um Cluster. Fiz algumas configurações bem básicas.
+Com o Cluster criado, apliquei os arquivos **.yaml** para criar os Pods e os services.
 
-* Detalhes do Cluster
-    
-    1. Nº Pods do Frontend: 1
-    2. Nº Pods do Backend: 1
+```
+kubectl apply -f deployment.yaml 
+```
+
+```
+kubectl apply -f services.yaml
+```
+
+Podemos ver se os Pods e os Services foram criados:
+
+```
+kubectl get pods
+```
+
+```
+NAME                        READY   STATUS    RESTARTS   AGE
+backend-6b849bbd5b-tptxn    1/1     Running   0          84m
+frontend-5fd4c5dbd7-7skq8   1/1     Running   0          84m
+```
+
+```
+kubectl get services
+```
+
+```
+NAME               TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)          AGE
+backend-service    LoadBalancer   10.98.129.88   10.98.129.88   8080:31192/TCP   80m
+frontend-service   LoadBalancer   10.99.48.25    10.99.48.25    80:32311/TCP     80m
+kubernetes         ClusterIP      10.96.0.1      <none>         443/TCP          95m
+```
 
 ## 4.0 Configuração da Aplicação
 
