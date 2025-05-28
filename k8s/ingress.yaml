@@ -25,10 +25,10 @@ metadata:
   namespace: lista-tarefas
 spec: 
   rules:
-    - host: lista-tarefas.192.168.49.2.nip.io/api
+    - host: lista-tarefas.192.168.49.2.nip.io
       http:
         paths:
-          - path: /(.*)
+          - path: /api(.*)
             pathType: Prefix
             backend:
               service:
