@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata: 
-  name: ingress-lista-tarefas
+  name: ingress-f-lista-tarefas
   namespace: lista-tarefas
 spec: 
   rules:
@@ -21,7 +21,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata: 
-  name: ingress-lista-tarefas
+  name: ingress-b-lista-tarefas
   namespace: lista-tarefas
 spec: 
   rules:
